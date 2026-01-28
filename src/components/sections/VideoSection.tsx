@@ -95,44 +95,25 @@ export function VideoSection() {
 // Placeholder component - will be replaced with actual video
 function VideoPlaceholder() {
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-foreground/5 to-foreground/10">
-      {/* Decorative background pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-accent/20 rounded-full blur-3xl" />
-      </div>
-
+    <div className="absolute inset-0 flex flex-col items-center justify-center bg-primary/10">
       {/* Play button */}
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/30 cursor-pointer"
+        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary flex items-center justify-center shadow-lg cursor-pointer"
         aria-label="Play video"
       >
-        <Play className="w-8 h-8 sm:w-10 sm:h-10 text-primary-foreground ml-1" fill="currentColor" />
+        <Play className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground ml-1" fill="currentColor" />
       </motion.button>
 
       {/* Placeholder text */}
-      <div className="relative z-10 mt-6 text-center px-4">
-        <p className="text-foreground font-semibold text-lg sm:text-xl">
+      <div className="mt-4 sm:mt-6 text-center px-6">
+        <p className="text-foreground font-semibold text-base sm:text-lg">
           Video Coming Soon
         </p>
-        <p className="text-muted-foreground text-sm mt-2 max-w-md">
-          Jayden will walk you through the entire blood testing process and explain how
-          optimal ranges differ from standard lab results
+        <p className="text-muted-foreground text-xs sm:text-sm mt-2 max-w-sm mx-auto">
+          Jayden will walk you through the blood testing process
         </p>
-      </div>
-
-      {/* Thumbnail overlay hint */}
-      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-center">
-        <div className="bg-background/80 backdrop-blur-sm rounded-lg px-4 py-2 border border-border/50">
-          <p className="text-xs text-muted-foreground">
-            <span className="font-mono bg-muted px-1.5 py-0.5 rounded text-[10px]">
-              VIDEO_CONFIG.vimeoId
-            </span>
-            {" "}← Add Vimeo ID here when ready
-          </p>
-        </div>
       </div>
     </div>
   );

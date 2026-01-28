@@ -192,16 +192,10 @@ export function Biomarkers() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="mt-16 max-w-4xl mx-auto"
+          className="mt-10 sm:mt-16 max-w-4xl mx-auto"
         >
-          <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-gradient-to-r from-primary/5 via-card to-primary/5 p-8">
-            {/* Background pattern */}
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute top-0 left-1/4 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 right-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
-            </div>
-
-            <div className="relative grid grid-cols-3 gap-8">
+          <div className="rounded-2xl border border-border/50 bg-card p-4 sm:p-8">
+            <div className="grid grid-cols-3 gap-2 sm:gap-8">
               <motion.div
                 className="text-center"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -209,10 +203,10 @@ export function Biomarkers() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, type: "spring" }}
               >
-                <div className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                <div className="text-3xl sm:text-5xl lg:text-6xl font-bold text-primary">
                   100+
                 </div>
-                <p className="text-sm text-muted-foreground mt-1 font-medium">Biomarkers</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-1 font-medium">Biomarkers</p>
               </motion.div>
 
               <motion.div
@@ -222,10 +216,10 @@ export function Biomarkers() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, type: "spring" }}
               >
-                <div className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">
+                <div className="text-3xl sm:text-5xl lg:text-6xl font-bold text-emerald-500">
                   80+
                 </div>
-                <p className="text-sm text-muted-foreground mt-1 font-medium">Page Report</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-1 font-medium">Page Report</p>
               </motion.div>
 
               <motion.div
@@ -235,10 +229,10 @@ export function Biomarkers() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.7, type: "spring" }}
               >
-                <div className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">
+                <div className="text-3xl sm:text-5xl lg:text-6xl font-bold text-amber-500">
                   1:1
                 </div>
-                <p className="text-sm text-muted-foreground mt-1 font-medium">Consultation</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-1 font-medium">Consultation</p>
               </motion.div>
             </div>
           </div>
