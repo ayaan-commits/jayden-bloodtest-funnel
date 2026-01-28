@@ -41,6 +41,8 @@ export function AboutSection() {
                 alt="Jayden Pileggi on rowing machine - Functional Medicine Practitioner"
                 fill
                 className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={95}
               />
             </div>
             {/* Decorative element */}

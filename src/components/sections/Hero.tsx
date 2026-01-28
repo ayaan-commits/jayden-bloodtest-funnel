@@ -150,9 +150,11 @@ export function Hero() {
                 <Image
                   src="/images/jayden-hero.jpg"
                   alt="Jayden Pileggi - Functional Medicine Practitioner"
-                  width={400}
-                  height={600}
+                  width={800}
+                  height={1200}
                   className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  quality={95}
                   priority
                 />
 

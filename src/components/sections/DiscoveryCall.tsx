@@ -39,6 +39,7 @@ export function DiscoveryCall() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
+                  quality={95}
                   priority
                 />
                 {/* Gradient overlay for text readability on mobile */}
