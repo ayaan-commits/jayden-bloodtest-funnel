@@ -37,8 +37,8 @@ export function AboutSection() {
           >
             <div className="aspect-[4/5] relative rounded-2xl overflow-hidden bg-muted">
               <Image
-                src="/images/jayden-rowing.jpg"
-                alt="Jayden Pileggi rowing - Functional Medicine Practitioner"
+                src="/images/jayden-about.jpg"
+                alt="Jayden Pileggi on rowing machine - Functional Medicine Practitioner"
                 fill
                 className="object-cover object-center"
               />
