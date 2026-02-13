@@ -75,11 +75,6 @@ const ExitIntentPopup = dynamic(
     import("@/components/ExitIntentPopup").then((m) => m.ExitIntentPopup),
   { ssr: true }
 );
-const WhatsAppChat = dynamic(
-  () =>
-    import("@/components/WhatsAppChat").then((m) => m.WhatsAppChat),
-  { ssr: true }
-);
 
 export default function Home() {
   return (
@@ -102,7 +97,6 @@ export default function Home() {
       <FAQ />
       <Footer />
       <ExitIntentPopup />
-      <WhatsAppChat />
     </main>
   );
 }

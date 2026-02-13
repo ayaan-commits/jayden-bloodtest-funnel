@@ -7,6 +7,31 @@ import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { scrollToProducts, scrollToDiscoveryCall } from "@/lib/utils/scroll";
 
+function IFMFlowerIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 100 100" className={className} xmlns="http://www.w3.org/2000/svg">
+      {/* Center petal - teal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#4BA8A8" opacity="0.9" transform="rotate(0 50 50)" />
+      {/* Top-right petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#3A9B8F" opacity="0.85" transform="rotate(45 50 50)" />
+      {/* Right petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#2D8E82" opacity="0.8" transform="rotate(90 50 50)" />
+      {/* Bottom-right petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#5BB5A0" opacity="0.75" transform="rotate(135 50 50)" />
+      {/* Bottom petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#6DC4B0" opacity="0.8" transform="rotate(180 50 50)" />
+      {/* Bottom-left petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#7ED0BC" opacity="0.75" transform="rotate(225 50 50)" />
+      {/* Left petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#5AAFA5" opacity="0.8" transform="rotate(270 50 50)" />
+      {/* Top-left petal */}
+      <ellipse cx="50" cy="38" rx="12" ry="20" fill="#48A29A" opacity="0.85" transform="rotate(315 50 50)" />
+      {/* Center dot */}
+      <circle cx="50" cy="50" r="6" fill="#3A8F85" />
+    </svg>
+  );
+}
+
 const trustPoints = [
   "100+ Biomarkers Analyzed",
   "Available Worldwide",
@@ -182,7 +207,7 @@ export function Hero() {
                   priority
                 />
 
-                {/* Certification Badge Overlay - simplified on mobile */}
+                {/* IFM Certification Badge Overlay */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -191,15 +216,15 @@ export function Hero() {
                 >
                   <div className="bg-card/95 backdrop-blur-sm rounded-lg sm:rounded-xl p-2 sm:p-3 border border-border/50 shadow-lg">
                     <div className="flex items-center gap-2 sm:gap-3">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0">
+                        <IFMFlowerIcon className="w-full h-full" />
                       </div>
                       <div>
                         <p className="font-semibold text-xs sm:text-sm text-foreground">
                           Certified Practitioner
                         </p>
                         <p className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block">
-                          The Institute of Functional Medicine
+                          The Institute for Functional Medicine&reg;
                         </p>
                       </div>
                     </div>
