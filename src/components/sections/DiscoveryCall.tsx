@@ -7,10 +7,10 @@ import Image from "next/image";
 import { useInView } from "@/lib/hooks/useInView";
 
 const benefits = [
-  "Discuss your health concerns one-on-one",
-  "Learn if the blood test is right for you",
-  "Get personalized recommendations",
-  "Have your questions answered",
+  "Discuss your health concerns one-on-one with Jayden",
+  "Get a personalized assessment of your health goals",
+  "Receive tailored recommendations for your situation",
+  "Walk away with a clear action plan",
 ];
 
 export function DiscoveryCall() {
@@ -34,7 +34,7 @@ export function DiscoveryCall() {
               <div className="relative md:col-span-2 h-64 md:h-auto">
                 <Image
                   src="/images/jayden-discovery.jpg"
-                  alt="Jayden Pileggi kettlebell training - Book a free discovery call for comprehensive blood testing consultation"
+                  alt="Jayden Pileggi kettlebell training - Book a discovery call for comprehensive blood testing consultation"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
@@ -59,12 +59,12 @@ export function DiscoveryCall() {
                 </div>
 
                 <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-3">
-                  Book a Free Discovery Call with Jayden Pileggi
+                  Book a Discovery Call with Jayden Pileggi
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Speak directly with Jayden to discuss your health goals and
-                  see if comprehensive blood testing is right for you.
+                  Get dedicated one-on-one time with Jayden to dive deep into
+                  your health goals and create a personalized plan tailored to you.
                 </p>
 
                 <ul className="space-y-3 mb-6">
@@ -107,7 +107,7 @@ export function DiscoveryCall() {
                   className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <Video className="w-5 h-5 mr-2" />
-                  Book Your Free Call
+                  Book Your Call
                 </Button>
 
                 {!CALENDLY_CONFIG.url && (
