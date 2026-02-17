@@ -12,7 +12,7 @@ const credentials = [
   },
   {
     icon: Award,
-    text: "Certified FDN Practitioner",
+    text: "Certified Blood Analysis Specialist",
     color: "from-amber-500 to-orange-500",
   },
   {
