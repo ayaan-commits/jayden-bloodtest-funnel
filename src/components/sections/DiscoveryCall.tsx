@@ -97,9 +97,15 @@ export function DiscoveryCall() {
                   </div>
                 </div>
 
-                <p className="text-xs text-primary font-medium mb-4">
+                <p className="text-xs text-primary font-medium mb-3">
                   Limited consultation slots available each week
                 </p>
+
+                <div className="mb-4 p-3 rounded-lg bg-green-500/10 border border-green-500/20">
+                  <p className="text-sm text-green-700 dark:text-green-400 font-medium">
+                    💡 Proceed with a blood test and your $150 call fee will be deducted from the total cost
+                  </p>
+                </div>
 
                 <Button
                   size="lg"
