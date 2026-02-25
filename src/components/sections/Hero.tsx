@@ -9,7 +9,7 @@ import { CALENDLY_CONFIG } from "@/lib/config";
 
 const trustPoints = [
   "100+ Biomarkers Analyzed",
-  "Available Worldwide",
+  "Available in USA, UK, AU & NZ",
   "Personal Consultation Included",
 ];
 
@@ -199,7 +199,7 @@ function TrustStats() {
         <span className="text-xs sm:text-sm text-muted-foreground">Client Rating</span>
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-lg sm:text-xl font-bold text-primary">15+</span>
+        <span className="text-lg sm:text-xl font-bold text-primary">4</span>
         <span className="text-xs sm:text-sm text-muted-foreground">Countries</span>
       </div>
     </motion.div>

@@ -17,12 +17,12 @@ const credentials = [
   },
   {
     icon: Users,
-    text: "Thousands of clients helped worldwide",
+    text: "Thousands of clients helped across 4 countries",
     color: "from-emerald-500 to-teal-500",
   },
   {
     icon: Globe,
-    text: "Serving clients globally",
+    text: "Serving clients in USA, UK, AU & NZ",
     color: "from-blue-500 to-cyan-500",
   },
 ];

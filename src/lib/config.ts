@@ -45,9 +45,9 @@ export const CALENDLY_CONFIG = {
 };
 
 export const PRODUCT_CONFIG = {
-  // Product purchase links - Update with actual checkout URLs
-  maleTestUrl: "#", // e.g., "https://checkout.stripe.com/..."
-  femaleTestUrl: "#",
+  // Product purchase links - Stripe checkout URLs
+  maleTestUrl: "https://buy.stripe.com/00weVf9oG4dJ1B89hq7Vm02",
+  femaleTestUrl: "https://buy.stripe.com/14AdRb8kC5hN5Ro9hq7Vm01",
 
   // Discovery call booking link (if different from Calendly)
   discoveryCallUrl: "",

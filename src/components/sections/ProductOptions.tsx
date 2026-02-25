@@ -3,7 +3,7 @@
 import { Check, ArrowRight, Shield } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { PRODUCT_CONFIG, CALENDLY_CONFIG } from "@/lib/config";
+import { PRODUCT_CONFIG } from "@/lib/config";
 import { useInView } from "@/lib/hooks/useInView";
 
 const commonFeatures = [
@@ -118,7 +118,7 @@ export function ProductOptions() {
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] active:scale-[0.98]"
                     asChild
                   >
-                    <a href={CALENDLY_CONFIG.url} target="_blank" rel="noopener noreferrer">
+                    <a href={product.ctaLink} target="_blank" rel="noopener noreferrer">
                       {product.ctaText}
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </a>
